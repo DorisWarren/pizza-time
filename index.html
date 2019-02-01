@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
@@ -13,7 +13,7 @@
       <div class="styles">
         <h1>Big Mama's Delicasy Pizza</h1>
         <h3>Big Mama's Special Order Form:</h3>
-        <form class="orderForm" action="index.html" method="post">
+        <form id="orderForm" action="index.html" method="post">
           <div class="form-group">
             <div class="row">
               <div class="col-md-4 col-sm-6">
@@ -37,21 +37,20 @@
                 <h5>12" Pizza: $12</h5>
                 <h5>18" Pizza: $18</h5>
                 <select class="form-control" id="pizzaSize">
-                  <option name="size" value="12>Regular 12"</option>
-                  <option name="size" value="18>Large 18"</option>
+                  <option name="size" value=12>Regular 12"</option>
+                  <option name="size" value=18>Large 18"</option>
                 </select>
-                <button type="submit" name="button" class="btn-danger">Submit Order</button>
+                <button type="submit" name="button" class="btn btn-info">Submit Order</button>
               </div>
             </div>
-            <div class="row">
-              <div class="orderTotal">
-                <h2>You're life changing pizza total is:</h2>
-                <h2>$<span id="insertCost"></span></h2>
-              </div>
+          <div class="row">
+            <div class="orderResults">
+              <h3>Thank you! You're total cost for a life changing pizza is:</h3>
+              <h2>$<span id="insertCost"></span></h2>
             </div>
           </div>
-        </form>
-      </div>
+         </div>
+      </form>
     </div>
   </body>
 </html>
