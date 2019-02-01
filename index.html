@@ -19,18 +19,34 @@
               <div class="col-md-4 col-sm-6">
                 <h4>What kind of love can Big Mama sprinkle on you're life changing pizza?</h4>
                 <h5>All special toppings are $1 per item! What a deal, right?</h5>
-                <h6 id="PsyhcoSpice">*All pizza are topped with a little sprink of PsyhcoSpice! </h6>
-                <input type="checkbox" name="topping" value="">
-                <input type="checkbox" name="topping" value="">
-                <input type="checkbox" name="topping" value="">
-                <input type="checkbox" name="topping" value="">
-                <input type="checkbox" name="topping" value="">
-                <input type="checkbox" name="topping" value="">
-                <input type="checkbox" name="topping" value="">
-                <input type="checkbox" name="topping" value="">
-                <input type="checkbox" name="topping" value="">
-                <input type="checkbox" name="topping" value="">
-                <input type="checkbox" name="topping" value="">
+                <h6 id="PsyhcoSpice">*All pizza's are topped with a little sprink of PsyhcoSpice! </h6>
+                <input type="checkbox" name="topping" value="1">Toxic Tomatoes</br>
+                <input type="checkbox" name="topping" value="1">Rosted Magic Mushrooms</br>
+                <input type="checkbox" name="topping" value="1">Devils Onion</br>
+                <input type="checkbox" name="topping" value="1">Poisonous Artichoke Hearts</br>
+                <input type="checkbox" name="topping" value="1">Carmalized Frong Legs</br>
+                <input type="checkbox" name="topping" value="1">Sauteed Sweet Ivy</br>
+                <input type="checkbox" name="topping" value="1">Fermented Dandilions</br>
+                <input type="checkbox" name="topping" value="1">Mermaid Sauce</br>
+                <input type="checkbox" name="topping" value="1">Fairy Dust</br>
+                <input type="checkbox" name="topping" value="1">Crispy Butterfly Wings</br>
+                <input type="checkbox" name="topping" value="1">Dragons Breath</br>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <h4>Select Pizza Size:</h4>
+                <h5>12" Pizza: $12</h5>
+                <h5>18" Pizza: $18</h5>
+                <select class="form-control" id="pizzaSize">
+                  <option name="size" value="12>Regular 12"</option>
+                  <option name="size" value="18>Large 18"</option>
+                </select>
+                <button type="submit" name="button" class="btn-danger">Submit Order</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="orderResults">
+                <h2>You're life changing pizza total is:</h2>
+                <h2>$<span id="insertCost"></span></h2>
               </div>
             </div>
           </div>
