@@ -12,6 +12,7 @@ _A user can select the ingredients and size of pizza they'd like to order. The p
 
 ##Project Specs
 
+
 ## Setup/Installation Requirements
 
 * _Clone this Repository_
@@ -29,13 +30,13 @@ _For any questions or concerns please, feel free to email me at doriswarren11@gm
 
 ## Technologies Used
 
-_Bootstrap pre-written
+_Bootstrap pre-written_
 _JQuery_
 _HTML_
 _CSS_
 
 ### License
 
-*This software is licensed under the MIT License.
+*This software is licensed under the MIT License.*
 
 Copyright (c) 2019 **_Doris Warren_**
