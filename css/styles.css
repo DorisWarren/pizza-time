@@ -1,0 +1,48 @@
+body {
+  background-image: url("../img/love.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  float: center;
+}
+
+.styles {
+  margin: 10px;
+  border: 2px solid white;
+  padding: 75px;
+}
+
+h1 {
+  font-family: B612 , sans-serif;
+  font-weight: bold;
+  color: red
+
+}
+
+h3 {
+  font-family: B612 , sans-serif;
+  font-weight: bold;
+  color: red
+}
+h4 {
+  font-family: B612 , sans-serif;
+  font-weight: bold;
+  color: red
+}
+
+h5 {
+  font-family: B612 , sans-serif;
+  font-weight: bold;
+  color: black
+}
+
+h6 {
+  font-family: B612 , sans-serif;
+  font-weight: bold;
+  color: black
+}
+
+.form-group {
+  font-family: B612 , sans-serif;
+  font-weight: bold;
+  color: white
+}
