@@ -11,6 +11,13 @@ _This site was created as the Intro to Programming Week 4 Independent Project. T
 _A user can select the ingredients and size of pizza they'd like to order. The price of their order will be determined according to the user's selection._
 
 ##Project Specs
+* _All toppings cost $1 each_
+* _Small pizzas cost $12_
+* _large pizza cost $18_
+* _Example selection: 12" Pizza with 3 toppings: Toxic Tomatoes, Fermented Dandelions, Mermaid Sauce_
+* _Expected output: $15_
+* _Example selection: 18" Pizza with 5 toppings: Roasted Magic Mushrooms, Caramelized Frog Legs, Crispy Butterfly Wings, Dragons Breath, Fairy Dust_
+* _Expected output: $23_
 
 
 ## Setup/Installation Requirements
