@@ -1,10 +1,9 @@
-
 function PizzaOrder() {
   this.pizzas = [];
   this.pizzaCost = [];
 }
 
-PizzaOrder.protoype.addPizzaToOrder = function(pizza) {
+PizzaOrder.prototype.addPizzaToOrder = function(pizza) {
   this.pizzaCost = pizza.toppingCost(pizza);
   this.pizzas.push(pizza);
 }
@@ -19,48 +18,39 @@ Pizza.prototype.totalPizzaCost = function(toppingsCostArray) {
   var toppingTotal = 0;
   for (var i = 0; i < toppingsCostArray.length; i++) {
     toppingTotal += toppingsCostArray[i];
- }
+  }
   return toppingTotal + this.size;
- }
+}
 
-// pizza.prototype.pizzaSizeCost = functions(size) {
-//   this.sizeCost += this.size;
-//   return this.sizeCost;
-// }
-//
-// pizza.prototype.totalPizzaCost = function() {
-//   this.pizzaCost = this.toppingCost = this.sizeCost;
-//   return this.pizzaCost;
-// }
 //user logic
 $(document).ready(function(){
 $("#orderForm").submit(function(event){
     event.preventDefault();
 
-var toppingsInputCostArray = [];
-$("input:checkbox[name=topping]:checked").each(function(){
-  var toppingInputCost = parseInt($(this).val());
-  toppingsInputCostArray.push(toppingInputCost);
-});
-console.log(toppingsInputCostArray);
+  var toppingsInputCostArray = [];
+  $("input:checkbox[name=topping]:checked").each(function(){
+    var toppingInputCost = parseInt($(this).val());
+    toppingsInputCostArray.push(toppingInputCost);
+  });
 
-var toppingsInputNameArray = [];
-$("input:checkbox[name=topping]:checked").each(function(){
-  var toppingInputName = $(this).val();
-  toppingsInputNameArray.push(toppingInputName);
-});
 
-var pizzaSize = parseInt($("#pizzaSize").val());
-console.log(pizzaSize);
+  var toppingsInputNameArray = [];
+  $("input:checkbox[name=topping]:checked").each(function(){
+    var toppingInputName = $(this).val();
+    toppingsInputNameArray.push(toppingInputName);
+  });
 
-var newPizza = newPizza(toppingsInputNameArray,pizzaSize);
-console.log(newPizza);
+  var pizzaSize = parseInt($("#pizzaSize").val());
 
-var pizzaTotalCost = newPizza.totalPizzaCost(toppingsInputCostArray,pizzaSize);
-console.long(pizzaTotalCost);
 
-$("#insertCost").text(pizzaTotalCost);
-$(".orderResults").show();
-});
+  var newPizza = new Pizza(toppingsInputNameArray,pizzaSize);
 
+
+  var pizzaTotalCost = newPizza.totalPizzaCost(toppingsInputCostArray,pizzaSize);
+
+
+  $("#insertCost").text(pizzaTotalCost);
+  $(".orderResults").show();
+  });
+  
 });
