@@ -10,7 +10,7 @@ _This site was created as the Intro to Programming Week 4 Independent Project. T
 
 _A user can select the ingredients and size of pizza they'd like to order. The price of their order will be determined according to the user's selection._
 
-##Project Specs
+## Project Specs
 * _All toppings cost $1 each_
 * _Small pizzas cost $12_
 * _large pizza cost $18_
