@@ -11,13 +11,19 @@ _This site was created as the Intro to Programming Week 4 Independent Project. T
 _A user can select the ingredients and size of pizza they'd like to order. The price of their order will be determined according to the user's selection._
 
 ## Project Specs
-* _All toppings cost $1 each_
-* _Small pizzas cost $12_
-* _large pizza cost $18_
-* _Example selection: 12" Pizza with 3 toppings: Toxic Tomatoes, Fermented Dandelions, Mermaid Sauce_
-* _Expected output: $15_
-* _Example selection: 18" Pizza with 5 toppings: Roasted Magic Mushrooms, Caramelized Frog Legs, Crispy Butterfly Wings, Dragons Breath, Fairy Dust_
-* _Expected output: $23_
+
+* _Big Mama's Pizza was created for hungry user's. Looking for a life changing pizza?_
+* _Program if user orders a small pizza_
+*  _Example input: small pizza_
+*  _Example Output: Total is $ 12_
+
+* _Program if user orders small pizza with two toppings_
+*  _Example input: small pizza, Toxic tomatoes, Roasted Magic mushrooms_
+*  _Example Output: Total is $ 14_
+
+* _Program user orders a large pizza with 3 toppings_
+*  _Example input: Large pizza , Fermented Dandelions, Fairy Dust , Crispy Butterfly Wings_
+*  _Example Output: Total is $ 21_
 
 
 ## Setup/Installation Requirements
@@ -26,7 +32,7 @@ _A user can select the ingredients and size of pizza they'd like to order. The p
 * _Open in preferred text editor_
 * _Open in preferred web browser_
 * _No other special requirements to view code_
-
+* _https://github.com/DorisWarren/pizza-time.git_
 ## Known Bugs
 
 _At this current time i am trying to fix the submit button. This is a work in progress!If there is anything else that needs my attention please bring it to me attention._
